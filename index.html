@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Service | Oficina e Peças</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="container menu">
+            <a href="#inicio" class="marca">
+                <img src="logo.webp" alt="Logo T-Service">
+            </a>
+
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#pecas">Peças</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="destaque" id="inicio">
+            <div class="container destaque-conteudo">
+                <p class="etiqueta">OFICINA E PEÇAS AUTOMOTIVAS</p>
+                <h1>Cuidado completo<br>para o seu carro.</h1>
+                <p class="descricao">
+                    Encontre peças automotivas e conte com serviços de
+                    manutenção para manter seu veículo em boas condições.
+                </p>
+                <a class="botao" href="#servicos">Conheça nossos serviços</a>
+            </div>
+        </section>
+
+        <section class="sobre container">
+            <div>
+                <p class="etiqueta">SOBRE A T-SERVICE</p>
+                <h2>Tudo para cuidar do seu veículo</h2>
+            </div>
+            <p>
+                A T-Service reúne oficina mecânica e venda de peças em um só lugar.
+                Nosso objetivo é oferecer praticidade na hora de cuidar do seu carro.
+            </p>
+        </section>
+
+        <section class="secao fundo-claro" id="pecas">
+            <div class="container">
+                <div class="titulo-secao">
+                    <div>
+                        <p class="etiqueta">NOSSA LOJA</p>
+                        <h2>Peças em destaque</h2>
+                    </div>
+                    <p>Confira alguns produtos do nosso catálogo.</p>
+                </div>
+
+                <div class="grade-produtos">
+                    <article class="produto">
+                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=700&q=80" alt="Peças automotivas">
+                        <div class="produto-info">
+                            <span class="categoria">MOTOR</span>
+                            <h3>Filtro de óleo</h3>
+                            <p>Ajuda a retirar impurezas do óleo do motor.</p>
+                            <strong>R$ 45,90</strong>
+                        </div>
+                    </article>
+
+                    <article class="produto">
+                        <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=700&q=80" alt="Manutenção de automóvel">
+                        <div class="produto-info">
+                            <span class="categoria">FREIOS</span>
+                            <h3>Pastilha de freio</h3>
+                            <p>Componente importante para o sistema de frenagem.</p>
+                            <strong>R$ 129,90</strong>
+                        </div>
+                    </article>
+
+                    <article class="produto">
+                        <img src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?auto=format&fit=crop&w=700&q=80" alt="Roda de automóvel">
+                        <div class="produto-info">
+                            <span class="categoria">ACESSÓRIOS</span>
+                            <h3>Palheta do limpador</h3>
+                            <p>Ajuda a manter a visibilidade em dias de chuva.</p>
+                            <strong>R$ 59,90</strong>
+                        </div>
+                    </article>
+                </div>
+                <p class="aviso">* Produtos e preços ilustrativos para este projeto acadêmico.</p>
+            </div>
+        </section>
+
+        <section class="secao container" id="servicos">
+            <div class="titulo-secao">
+                <div>
+                    <p class="etiqueta">NOSSA OFICINA</p>
+                    <h2>Serviços automotivos</h2>
+                </div>
+                <p>Cuidados básicos para o seu veículo.</p>
+            </div>
+
+            <div class="grade-servicos">
+                <article class="servico">
+                    <span class="numero">01</span>
+                    <h3>Troca de óleo</h3>
+                    <p>Troca de óleo e verificação dos filtros do veículo.</p>
+                </article>
+                <article class="servico">
+                    <span class="numero">02</span>
+                    <h3>Revisão geral</h3>
+                    <p>Verificação de itens importantes para o funcionamento do carro.</p>
+                </article>
+                <article class="servico">
+                    <span class="numero">03</span>
+                    <h3>Freios</h3>
+                    <p>Inspeção dos componentes do sistema de frenagem.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contato" id="contato">
+            <div class="container contato-conteudo">
+                <div>
+                    <p class="etiqueta">FALE COM A GENTE</p>
+                    <h2>Solicite um agendamento</h2>
+                    <p>Preencha os dados e envie sua solicitação de atendimento.</p>
+                </div>
+
+                <form id="formulario">
+                    <label for="nome">Seu nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+                    <label for="veiculo">Modelo do veículo</label>
+                    <input type="text" id="veiculo" placeholder="Ex.: Corolla 2020" required>
+
+                    <label for="servico">Serviço desejado</label>
+                    <select id="servico" required>
+                        <option value="">Selecione um serviço</option>
+                        <option value="Troca de óleo">Troca de óleo</option>
+                        <option value="Revisão geral">Revisão geral</option>
+                        <option value="Freios">Freios</option>
+                    </select>
+
+                    <button class="botao" type="submit">Enviar solicitação</button>
+                    <p id="mensagem"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container rodape">
+            <img src="logo.webp" alt="Logo T-Service">
+            <p>Oficina mecânica e peças automotivas.</p>
+            <p class="copyright">© 2026 T-Service - Projeto acadêmico demonstrativo.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
